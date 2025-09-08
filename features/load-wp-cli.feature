@@ -1,9 +1,9 @@
-Feature: Test that WP-CLI loads.
+Feature: Test that FP-CLI loads.
 
-  Scenario: WP-CLI loads for your tests
-    Given a WP install
+  Scenario: FP-CLI loads for your tests
+    Given a FP install
 
-    When I run `wp eval 'echo "Hello world.";'`
+    When I run `fp eval 'echo "Hello world.";'`
     Then STDOUT should contain:
       """
       Hello world.

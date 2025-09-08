@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="WP-CLI-cache">
-	<description>Custom ruleset for WP-CLI admin-command</description>
+<ruleset name="FP-CLI-cache">
+	<description>Custom ruleset for FP-CLI admin-command</description>
 
 	<!--
 	#############################################################################
@@ -24,11 +24,11 @@
 
 	<!--
 	#############################################################################
-	USE THE WP_CLI_CS RULESET
+	USE THE FP_CLI_CS RULESET
 	#############################################################################
 	-->
 
-	<rule ref="WP_CLI_CS"/>
+	<rule ref="FP_CLI_CS"/>
 
 	<!--
 	#############################################################################
@@ -40,7 +40,7 @@
 		 https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
 	<config name="testVersion" value="7.2-"/>
 
-	<!-- Make this sniff slightly less finicky. The WP Core default is 40. -->
+	<!-- Make this sniff slightly less finicky. The FP Core default is 40. -->
 	<rule ref="Generic.Formatting.MultipleStatementAlignment">
 		<properties>
 			<property name="maxPadding" value="20"/>
@@ -48,7 +48,7 @@
 	</rule>
 
 	<!-- Exclude existing classes from the prefix rule as it would break BC to prefix them now. -->
-	<rule ref="WordPress.NamingConventions.PrefixAllGlobals.NonPrefixedClassFound">
+	<rule ref="FinPress.NamingConventions.PrefixAllGlobals.NonPrefixedClassFound">
 		<exclude-pattern>*/src/Admin_Command\.php$</exclude-pattern>
 	</rule>
 
