@@ -1,14 +1,14 @@
 {
-    "name": "fp-cli/admin-command",
-    "type": "fp-cli-package",
-    "description": "Open /fp-admin/ in a browser.",
-    "homepage": "https://github.com/fp-cli/admin-command",
+    "name": "fin-cli/admin-command",
+    "type": "fin-cli-package",
+    "description": "Open /fin-admin/ in a browser.",
+    "homepage": "https://github.com/fin-cli/admin-command",
     "license": "MIT",
     "require": {
-        "fp-cli/fp-cli": "^2"
+        "fin-cli/fin-cli": "^2"
     },
     "require-dev": {
-        "fp-cli/fp-cli-tests": "^5"
+        "fin-cli/fin-cli-tests": "^5"
     },
     "config": {
         "process-timeout": 7200,
@@ -53,6 +53,6 @@
         ]
     },
     "support": {
-        "issues": "https://github.com/fp-cli/admin-command/issues"
+        "issues": "https://github.com/fin-cli/admin-command/issues"
     }
 }

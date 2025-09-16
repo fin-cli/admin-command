@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<ruleset name="FP-CLI-cache">
-	<description>Custom ruleset for FP-CLI admin-command</description>
+<ruleset name="FIN-CLI-cache">
+	<description>Custom ruleset for FIN-CLI admin-command</description>
 
 	<!--
 	#############################################################################
@@ -24,11 +24,11 @@
 
 	<!--
 	#############################################################################
-	USE THE FP_CLI_CS RULESET
+	USE THE FIN_CLI_CS RULESET
 	#############################################################################
 	-->
 
-	<rule ref="FP_CLI_CS"/>
+	<rule ref="FIN_CLI_CS"/>
 
 	<!--
 	#############################################################################
@@ -40,7 +40,7 @@
 		 https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions -->
 	<config name="testVersion" value="7.2-"/>
 
-	<!-- Make this sniff slightly less finicky. The FP Core default is 40. -->
+	<!-- Make this sniff slightly less finicky. The FIN Core default is 40. -->
 	<rule ref="Generic.Formatting.MultipleStatementAlignment">
 		<properties>
 			<property name="maxPadding" value="20"/>

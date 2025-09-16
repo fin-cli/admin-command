@@ -1,13 +1,13 @@
 <?php
 
-if ( ! class_exists( 'FP_CLI' ) ) {
+if ( ! class_exists( 'FIN_CLI' ) ) {
 	return;
 }
 
 /**
- * Open /fp-admin/ in a browser.
+ * Open /fin-admin/ in a browser.
  */
-function fp_cli_admin_command() {
+function fin_cli_admin_command() {
 	switch ( strtoupper( substr( PHP_OS, 0, 3 ) ) ) {
 		case 'DAR':
 			$exec = 'open';
@@ -20,4 +20,4 @@ function fp_cli_admin_command() {
 	}
 	passthru( $exec . ' ' . escapeshellarg( admin_url() ) );
 }
-FP_CLI::add_command( 'admin', 'fp_cli_admin_command' );
+FIN_CLI::add_command( 'admin', 'fin_cli_admin_command' );
